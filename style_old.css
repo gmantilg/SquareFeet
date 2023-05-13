@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    }
+
+nav a{
+        align-items: center;
+        text-decoration:none;
+        text-transform: uppercase;
+        color:inherit;
+        font-size:16px;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-weight: bold;
+        } 
+
+ nav li{
+        display:inline-block;
+        width:10%;
+        padding:5px 10px;
+        background-color:#000;
+        border:1px solid #000;
+        text-align:center;
+        color:#fff;
+ }
+        nav li:hover{
+        background-color:#fff;
+        color:#000;
+ }
+
+ h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 120px;
+    color: #fff;
+    text-transform: uppercase;
+ }
+
+ h3{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+ }
+
+ p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #fff;
+ }
+
+.parte2{
+    background-color: #171718;
+}
+
+.video{
+   background-color: #171718;
+}
+
+.fondogris{
+   background-color: #171718;
+}
+
+.boton {
+   border: 1px solid white; 
+   padding: 10px; 
+   background-color: black; 
+   color: #ffffff; 
+   text-transform: uppercase; 
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   text-decoration: none; 
+   font-size: 20px;
+   }
+
+
+.boton:hover{
+background-color:#fff;
+color:#000;
+}
+
+
+footer a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+
+footer a:hover{
+    color:yellow;
+}
