@@ -87,7 +87,7 @@
 }
 
 .navbar-link > .active > a {
-  color: aqua;
+  color: #ffde00;
   background-color: chartreuse;
 }
 
