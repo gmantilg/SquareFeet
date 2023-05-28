@@ -1,31 +1,96 @@
 .bodystyles {
-    background-color : black;
+  background-color : black;
+  }
+  .col {
+  padding-top : 3%;
+  padding-bottom : 3%;
+  font-family : 'Oswald', sans-serif;
+  color : #fff;
+  font-size : 24px;
+  }
+  .titulo {
+  font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+  color : #ffde00;
+  font-size : 120px;
+  }
+  .titulo2 {
+    font-family: 'Oswald', sans-serif;
+    color : #ffde00;
+    font-size : 90px;
     }
-
-.col{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-family: 'Yanone Kaffeesatz', sans-serif; color: #fff; font-size: 24px;
+  .texto {
+  font-family : 'Raleway', sans-serif;
+  color : #fff;
+  font-size : 24px;
+  padding-bottom: 10px;
+  }
+  .texto_f {
+    font-family : 'Raleway', sans-serif;
+    color : #fff;
+    font-size : 12px;
+    padding: 10px;
+    }
+  .titulo_tar {
+  font-family : 'Oswald', sans-serif;
+  color : #ffde00;
+  font-size : 40px;
+  }
+  .container {
+  padding : 50px;
+  }
+  .container2 {
+  margin-top : 50px;
+  }
+  .p {
+  font-family : 'Raleway', sans-serif;
+  font-weight : 200;
+  font-size : 16px;
+  color : #fff;
+  }
+  .parte2 {
+  background-color : #171718;
+  }
+  .video {
+  background-color : #171718;
+  }
+  .fondogris {
+  background-color : #171718;
+  }
+  .boton {
+  border : white solid 1px;
+  padding : 10px;
+  background-color : black;
+  color : #ffffff;
+  text-transform : uppercase;
+  font-family : 'Yanone Kaffeesatz', sans-serif;
+  text-decoration : none;
+  font-size : 20px;
+  }
+  .boton:hover {
+  background-color : #fff;
+  color : #000;
   }
 
-.titulo{
-    padding:10px;
-    font-family: 'Oswald', sans-serif; color: yellow; font-size: 100px;
+  .navbar-link > .active > a {
+    color: aqua;
+    background-color: chartreuse;    
+  }
+  .nav-item > a:hover {
+    color: #ffde00;
   }
 
-.texto{
-    font-family: 'Yanone Kaffeesatz', sans-serif; color: #fff; font-size: 24px;
+  footer a {
+  text-decoration : none;
+  color : white;
+  font-size : 16px;
+  font-family : 'Oswald', sans-serif;
+  font-weight : bold;
+  text-transform : uppercase;
+  }
+  footer a:hover {
+  color : #ffde00;
   }
 
-  .titulo_tar{
-    font-family: 'Oswald', sans-serif; color: yellow; font-size: 40px;
-  } 
 
-.container{
-  padding:10px;
-}
-
-.container2{
-  margin-top: 50px;
-}
-
+  
