@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto bootstrap  Gio Mantilla -  Inicio</title>
-    <link rel="stylesheet" type="text/css" href="SCSS/styles.css">
+    <title>Square Feet - skateboard Shop - Proyecto bootstrap  Gio Mantilla -  Nosotros</title>
+    <meta name="description" content="La cultura del skateboard se ha convertido en un fenómeno global, con comunidades vibrantes y competencias internacionales.">
+    <meta name="keywords" content="skateboarding, skateboard, trucos, rampas, estilo, deporte, tienda, shop, sk8">
+    <meta property="og:image" content="imagen/header_8_bn.jpg">
+    <link rel="shortcut icon" href="imagen/logo_mini.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="SCSS/styles.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:wght@100;400&display=swap');
     </style>
@@ -38,7 +44,7 @@
             <a class="nav-link active" href="seccion4.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="seccion5.html">Galeria</a>
+            <a class="nav-link" href="seccion5.html">Galería</a>
           </li>
          
         </ul>
@@ -49,27 +55,43 @@
 </header>
 <!--Carrusel 2 imagenes-->
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imagen/header_8_bn.jpg" class="d-block w-100" alt="imagen 1">
-          </div>
-          <div class="carousel-item">
-            <img src="imagen/header_9_bn.jpg" class="d-block w-100" alt="imagen 2">
-          </div>
-        </div>
-      </div>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagen/header_8_bn.jpg" class="d-block w-100" alt="header 8">
+    </div>
+    <div class="carousel-item">
+      <img src="imagen/header_9_bn.jpg" class="d-block w-100" alt="header 9">
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <!--Bloque 1-->
 
 <div class="container">
-  <h1 class="titulo">
+  <h1 class="titulo col-xl-12 col-md-12 col-sm-12">
       <b>El dreamTeam SK8</b>
   </h1>
   <img src="imagen/linea_1.png" class="img-fluid" alt="linea">
   </div>
 
 <div class="container">
+  <div data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
   <div class="row">
     <div class="col-xl-12 col-md-12 col-sm-12">
       <p class="texto">Contamos con un equipo de entrenadores expertos y apasionados que están listos para llevarte al siguiente nivel en tu habilidad de skateboarding. Nuestro equipo está formado por tres skaters profesionales altamente capacitados, cada uno con su propio estilo y especialidad. Ya sea que estés aprendiendo los conceptos básicos del skateboarding o deseas perfeccionar tus trucos más avanzados, nuestros entrenadores personalizarán las sesiones de entrenamiento según tus necesidades y metas individuales. Con su experiencia y conocimiento, te proporcionarán orientación técnica, consejos prácticos y motivación constante para que alcances tus objetivos y te sientas más confiado en tu patinaje.
@@ -79,25 +101,29 @@
 
     </p>
     </div>
+  </div>
  </div>
 
 
 <!--Bloque 2-->
 
 <div class="container">
-  <h1 class="titulo">
+  <h2 class="titulo col-xl-12 col-md-12 col-sm-12">
       <b>Los Cracks</b>
-  </h1>
+  </h2>
   </div>
   
   <div class="container">
+    <div data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
       <div class="row">
         
         <!--Tarjeta 1-->
 
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/skater_01.png" class="card-img-top" alt="...">
+            <img src="imagen/skater_01.png" class="card-img-top" alt="Chris Cole">
             <div class="card-body ">
               <h6 class="titulo_tar">Chris Cole</h6>
               <p class="texto"> Skater profesional estadounidense. Es ampliamente reconocido como uno de los skaters más influyentes y exitosos de su generación. Cole ha ganado numerosos campeonatos y competiciones a lo largo de su carrera, incluyendo varias victorias en los prestigiosos X Games y el Street League Skateboarding. </p>
@@ -109,7 +135,7 @@
 
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/skater_02.png" class="card-img-top" alt="...">
+            <img src="imagen/skater_02.png" class="card-img-top" alt="Rob Dyrdek">
             <div class="card-body ">
               <h6 class="titulo_tar">Rob Dyrdek</h6>
               <p class="texto">Empresario, exskater profesional, presentador de televisión y productor estadounidense. Nació el 28 de junio de 1974 en Kettering, Ohio. Dyrdek se dio a conocer en la escena del skateboarding en la década de 1990, donde destacó por su estilo creativo y por ser uno de los pioneros en la realización de trucos y acrobacias innovadoras.</p>
@@ -121,18 +147,20 @@
         
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/skater_03.png" class="card-img-top" alt="...">
+            <img src="imagen/skater_03.png" class="card-img-top" alt="Rodney Mullen">
             <div class="card-body ">
               <h6 class="titulo_tar">Rodney Mullen</h6>
               <p class="texto">Es conocido por su estilo técnico y su capacidad para inventar y perfeccionar numerosos trucos y maniobras en el skateboarding. Fue uno de los primeros en popularizar el uso del ollie,También fue el creador de otros trucos revolucionarios, como el kickflip, heelflip, 360 flip y muchas otras combinaciones y variaciones.</p>
             </div>
           </div>
         </div>
+        </div>
      </div>
 
 <!--footer-->
 
 <div class="container">
+  <div data-aos="zoom-in-up" data-aos-duration="1000">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
     <img src="imagen/linea_1.png" class="img-fluid" alt="linea">
     <p class="col-md-4 mb-0 text-light">&copy; SquareFoot - 2023</p>
@@ -155,8 +183,13 @@
       </li>
     </ul>
   </footer>
+  </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    </body>
 </html>

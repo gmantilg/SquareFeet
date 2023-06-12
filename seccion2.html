@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto bootstrap  Gio Mantilla -  Inicio</title>
-    <link rel="stylesheet" type="text/css" href="SCSS/styles.css">
+    <title>Square Feet - skateboard Shop - Proyecto bootstrap  Gio Mantilla -  Servicios</title>
+    <meta name="description" content="En nuestro skate park, ofrecemos una amplia gama de servicios diseñados para satisfacer las necesidades de los amantes del skateboarding de todas las edades y niveles de habilidad. Nuestro objetivo es proporcionar un espacio seguro y emocionante.">
+    <meta name="keywords" content="servicios, SkatePark, Sk8, skateboarding, skateboard, trucos, rampas, estilo, deporte, tienda, shop">
+    <meta property="og:image" content="imagen/header_4_bn.jpg">
+    <link rel="shortcut icon" href="imagen/logo_mini.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="SCSS/styles.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:wght@100;400&display=swap');
     </style>
@@ -38,7 +44,7 @@
             <a class="nav-link" href="seccion4.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="seccion5.html">Galeria</a>
+            <a class="nav-link" href="seccion5.html">Galería</a>
           </li>
          
         </ul>
@@ -49,21 +55,34 @@
 </header>
 <!--Carrusel 2 imagenes-->
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imagen/header_4_bn.jpg" class="d-block w-100" alt="imagen 1">
-          </div>
-          <div class="carousel-item">
-            <img src="imagen/header_5_bn.jpg" class="d-block w-100" alt="imagen 2">
-          </div>
-        </div>
-      </div>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagen/header_4_bn.jpg" class="d-block w-100" alt="header 4">
+    </div>
+    <div class="carousel-item">
+      <img src="imagen/header_5_bn.jpg" class="d-block w-100" alt="header 5">
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <!--Bloque 1-->
 
 <div class="container">
-  <h1 class="titulo">
+  <h1 class="titulo col-xl-12 col-md-12 col-sm-12">
       <b>Somos Los amos de Dogtown</b>
   </h1>
   <img src="imagen/linea_1.png" class="img-fluid" alt="linea">
@@ -71,6 +90,9 @@
 
 <div class="container">
   <div class="row">
+    <div data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
     <div class="col-xl-12 col-md-12 col-sm-12">
       <p class="texto">A medida que los años 80 dieron paso a los 90, los avances en la tecnología del hogar aumentaron el atractivo del skateboarding de manera exponencial, mientras que las formas de las tablas se estabilizaron en torno a la forma de paleta bidireccional ultrafuncional que domina en la actualidad.
 
@@ -84,23 +106,26 @@
       <br>
       <br>
     </div>
+    </div>
  </div>
 
 <!--Bloque 2-->
-
+<div data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
 <div class="tutorial container text-center my-5 ratio ratio-16x9">
   <iframe src="https://www.youtube.com/embed/1glPCXt8cBo?rel=0"
   allowfullscreen>
 </iframe>
-
+</div>
 </div>
 
 <!--Bloque 3-->
 
 <div class="container">
-  <h1 class="titulo">
+  <h2 class="titulo col-xl-12 col-md-12 col-sm-12">
       <b>Nuestros Servicios</b>
-  </h1>
+  </h2>
   </div>
   
   <div class="container">
@@ -110,7 +135,7 @@
 
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/photo_04.png" class="card-img-top" alt="...">
+            <img src="imagen/photo_04.png" class="card-img-top" alt="imagen sk8 nota">
             <div class="card-body ">
               <h6 class="titulo_tar">Street</h6>
               <p class="texto">La disciplina Skate Street utiliza una combinación de obstáculos que pretende reflejar, a grandes rasgos, la arquitectura urbana sobre la que se creó este deporte: escaleras, barandillas, cornisas, bancos, etc.</p>
@@ -123,7 +148,7 @@
 
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/photo_05.png" class="card-img-top" alt="...">
+            <img src="imagen/photo_05.png" class="card-img-top" alt="imagen sk8 nota">
             <div class="card-body ">
               <h6 class="titulo_tar">Bowl</h6>
               <p class="texto">El Skate Bowl está basado en la transición. Sus skateparks intercalan bowls (¡generalmente de hormigón duro como la roca!). En pocas palabras, imagina una serie de piscinas vacías donde se realizan trucos aéreos.</p>
@@ -136,7 +161,7 @@
         
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/photo_06.png" class="card-img-top" alt="...">
+            <img src="imagen/photo_06.png" class="card-img-top" alt="imagen sk8 nota">
             <div class="card-body ">
               <h6 class="titulo_tar">freestyle</h6>
               <p class="texto">es una de las formas de patinar más antiguas y fue mayormente popular desde la década de 1960 hasta principios de la de 1990, cuando se llevó a cabo la competencia final de monopatinaje de freestyle.</p>
@@ -149,6 +174,7 @@
 <!--footer-->
 
 <div class="container">
+  <div data-aos="zoom-in-up" data-aos-duration="1000">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
     <img src="imagen/linea_1.png" class="img-fluid" alt="linea">
     <p class="col-md-4 mb-0 text-light">&copy; SquareFoot - 2023</p>
@@ -171,8 +197,13 @@
       </li>
     </ul>
   </footer>
+  </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    </body>
 </html>

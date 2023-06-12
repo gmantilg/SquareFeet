@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto bootstrap  Gio Mantilla -  Inicio</title>
+    <title>Square Feet - skateboard Shop - Proyecto bootstrap  Gio Mantilla -  Inicio</title>
+    <meta name="description" content="La cultura del skateboard se ha convertido en un fenómeno global, con comunidades vibrantes y competencias internacionales.">
+    <meta name="keywords" content="skateboarding, skateboard, trucos, rampas, estilo, deporte, tienda, shop, sk8">
+    <meta property="og:image" content="imagen/header_3_bn.jpg">
+    <link rel="shortcut icon" href="imagen/logo_mini.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="SCSS/styles.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:wght@100;400&display=swap');
     </style>
@@ -38,7 +44,7 @@
             <a class="nav-link" href="seccion4.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="seccion5.html">Galeria</a>
+            <a class="nav-link" href="seccion5.html">Galería</a>
           </li>
          
         </ul>
@@ -48,55 +54,81 @@
   
 
 </header>
+
 <!--Carrusel 3 imagenes-->
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imagen/header_bn.jpg" class="d-block w-100" alt="imagen 1">
-          </div>
-          <div class="carousel-item">
-            <img src="imagen/header_2_bn.jpg" class="d-block w-100" alt="imagen 2">
-          </div>
-          <div class="carousel-item">
-            <img src="imagen/header_3_bn.jpg" class="d-block w-100" alt="imagen 3">
-          </div>
-        </div>
-      </div>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagen/header_3_bn.jpg" class="d-block w-100" alt="header 3">
+    </div>
+    <div class="carousel-item">
+      <img src="imagen/header_2_bn.jpg" class="d-block w-100" alt="header 2">
+    </div>
+    <div class="carousel-item">
+      <img src="imagen/header_bn.jpg" class="d-block w-100" alt="header 1">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 <!--contenido-->
 
 <div class="container">
-<h1 class="titulo">
+<h1 class="titulo col-xl-12 col-md-12 col-sm-12">
     <b>Llegó el momento de aprender</b>
 </h1>
 <img src="imagen/linea_1.png" class="img-fluid" alt="linea">
 </div>
 
 <div class="container">
+  <div data-aos="zoom-in-up" data-aos-duration="1000">
+    
     <div class="row">
       <div class="col-xl-6 col-md-12 col-sm-12">
         <p class="texto"><strong>El skateboarding es un deporte que consiste en deslizarse sobre una tabla con ruedas </strong>y a su vez poder realizar diversidad de trucos, gran parte de ellos elevando la tabla del suelo y haciendo figuras y piruetas con ella en el aire.<br><br> Se practica con un skateboard (‘patineta’ en otros países latinoamericanos), tabla de madera plana y doblada por los extremos y que tiene dos ejes (trucks) y cuatro ruedas, y con 2 rodamientos en cada una de sus 4 ruedas, preferentemente en una superficie plana.
         </p>
       </div>
       <div class="col-xl-6 col-md-12 col-sm-12">
-        <img src="imagen/imagen_1.png" class="img-fluid" alt="...">
+        <div data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+        <img src="imagen/imagen_1.png" class="img-fluid" alt="imagen nota 1">
       </div>
+      </div>
+    </div>
    </div>
 
 
 
 <!--Bloque 2-->
   
-  <div class="container2">
+  <div class="container2 ">
       <div class="row">
 
         <div class="col-xl-6 col-md-12 col-sm-12">
-          <img src="imagen/imagen_2.png" class="img-fluid" alt="...">
+          <div data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
+          <img src="imagen/imagen_2.png" class="img-fluid" alt="imagen_bloque">
+        </div>
         </div>
 
         <div class="col-xl-6 col-md-12 col-sm-12">
-          <h3 class="titulo2">
+          <div data-aos="zoom-in-up" data-aos-duration="1000">
+          <h3 class="titulo2 col-xl-12 col-md-12 col-sm-12">
             <b>La historia SK8</b>
         </h3>
           <p class="texto">Fue aquí donde nació el skate de transición vertical. En los años 80, una nueva generación de skaters como Christian Hosoi, Steve Caballero y Tony Hawk superaron los límites del skateboarding Vert. Paralelamente, Rodney Mullen, de Florida, asombró al mundo con su increíble repertorio de trucos en terreno llano.
@@ -104,6 +136,7 @@
         </div>
      </div>
     </div>     
+  </div>
   </div> 
 <!--Bloque 3-->
 <div>
@@ -113,6 +146,7 @@
 <!--Bloque 4-->
 
 <div class="container">
+  <div data-aos="zoom-in-up" data-aos-duration="1000">
   <div class="row">
     <div class="col-xl-12 col-md-12 col-sm-12">
 
@@ -125,25 +159,27 @@
       
       </p>
     </div>
+  </div>
  </div>
 
 <!--Bloque 5-->
 
 <div class="container">
-  <h1 class="titulo">
+  <h2 class="titulo col-xl-12 col-md-12 col-sm-12">
       <b>En Noticias</b>
 
-  </h1>
+  </h2>
   </div>
   
   <div class="container3">
+    <div data-aos="zoom-in-up" data-aos-duration="1000">
       <div class="row">
         
         <!--Tarjeta 1-->
 
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/photo_01.png" class="card-img-top" alt="...">
+            <img src="imagen/photo_01.png" class="card-img-top" alt="fotografia Sk8">
             <div class="card-body">
               <h6 class="titulo_tar">Sobre el SK8</h6>
               <p class="texto">La cultura del skateboard se ha convertido en un fenómeno global, con comunidades vibrantes y competencias internacionales. Además de ser un deporte, el skateboard es una forma de expresión artística. Los skaters personalizan sus tablas con diseños únicos y se inspiran en el graffiti, la música y el estilo de vida callejero. Esta subcultura ha influido en la moda, el cine y la música,</p>
@@ -156,7 +192,7 @@
 
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/photo_02.png" class="card-img-top" alt="...">
+            <img src="imagen/photo_02.png" class="card-img-top" alt="fotografia noticia sk8">
             <div class="card-body ">
               <h6 class="titulo_tar">Los datos</h6>
               <p class="texto">El skateboard, también conocido como monopatín, es un deporte urbano que combina equilibrio, destreza y creatividad. Con una tabla y cuatro ruedas, los skaters desafían la gravedad realizando trucos y acrobacias en parques, calles y rampas. Desde los clásicos ollies hasta los complejos kickflips, el skateboard ofrece una experiencia emocionante y única para aquellos que buscan la libertad sobre ruedas.</p>
@@ -169,7 +205,7 @@
         
         <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="card bg-dark">
-            <img src="imagen/photo_03.png" class="card-img-top" alt="...">
+            <img src="imagen/photo_03.png" class="card-img-top" alt="fotografia sk8 nota">
             <div class="card-body ">
               <h6 class="titulo_tar">los benefiio</h6>
               <p class="texto">El skateboarding no solo es divertido, sino que también ofrece beneficios físicos y mentales. A nivel físico, mejora el equilibrio, la coordinación y la resistencia. Además, fortalece los músculos de las piernas y el core. A nivel mental, el skateboard fomenta la concentración, la confianza y la superación personal. Los skaters aprenden a enfrentar desafíos, a persistir ante la frustración y creer en el apredizaje.</p>
@@ -177,11 +213,13 @@
             </div>
           </div>
         </div>
+      </div>
      </div>
 
 <!--footer-->
 
      <div class="container">
+      <div data-aos="zoom-in-up" data-aos-duration="1000">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
         <img src="imagen/linea_1.png" class="img-fluid" alt="linea">
         <p class="col-md-4 mb-0 text-light">&copy; SquareFoot - 2023</p>
@@ -204,8 +242,13 @@
           </li>
         </ul>
       </footer>
+      </div>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
