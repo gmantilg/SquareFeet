@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
-    --clr-main: #000000;
-    --clr-main-light: #262627;
+    --clr-main: #4b33a8;
+    --clr-main-light: #785ce9;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
@@ -10,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
@@ -141,7 +144,7 @@ main {
 
 .contenedor-productos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -163,8 +166,7 @@ main {
 }
 
 .producto-titulo {
-    font-size: 2rem;
-    color: #ffde00;
+    font-size: 1rem;
 }
 
 .producto-agregar {
@@ -284,6 +286,7 @@ main {
     display: none;
 }
 
+/*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {
     .contenedor-productos {
@@ -383,118 +386,10 @@ main {
 
 }
 
+
+
 @media screen and (max-width: 400px) {
     .contenedor-productos {
         grid-template-columns: 1fr;
     }
 }
-
-.bodystyles {
-  background-color: black;
-}
-
-.col {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  font-family: "Oswald", sans-serif;
-  color: #fff;
-  font-size: 24px;
-}
-
-.titulo {
-  font-family: "Oswald", sans-serif;
-  text-transform: capitalize;
-  color: #ffde00;
-  font-size: 90px;
-}
-
-.titulo2 {
-  font-family: "Oswald", sans-serif;
-  color: #ffde00;
-  font-size: 45px;
-}
-
-.texto {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 24px;
-  padding-bottom: 10px;
-}
-
-.texto_f {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 12px;
-  padding: 10px;
-}
-
-.titulo_tar {
-  font-family: "Oswald", sans-serif;
-  color: #ffde00;
-  font-size: 40px;
-}
-
-.container {
-  padding: 1px;
-}
-
-.container2 {
-  margin-top: 45px;
-}
-
-.p {
-  font-family: "Raleway", sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  color: #fff;
-}
-
-.parte2 {
-  background-color: #171718;
-}
-
-.video {
-  background-color: #171718;
-}
-
-.fondogris {
-  background-color: #171718;
-}
-
-.boton {
-  border: white solid 1px;
-  padding: 10px;
-  background-color: black;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.boton:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.navbar-link > .active > a {
-  color: #ffde00;
-  background-color: chartreuse;
-}
-
-.nav-item > a:hover {
-  color: #ffde00;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-footer a:hover {
-  color: #ffde00;
-}/*# sourceMappingURL=styles.css.map */

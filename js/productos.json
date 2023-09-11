@@ -1,0 +1,82 @@
+[
+    {
+        "id": "tabla 01",
+        "titulo": "tabla 01",
+        "imagen": "imagen/tabla01.jpeg",
+        "categoria": {
+            "nombre": "tablas",
+            "id": "tablas"
+        },
+        "precio": 120.000
+    },
+    {
+        "id": "tabla 02",
+        "titulo": "tabla 02",
+        "imagen": "imagen/tabla02.jpeg",
+        "categoria": {
+            "nombre": "tablas",
+            "id": "tablas"
+        },
+        "precio": 250.000
+    },
+    {
+        "id": "tabla 03",
+        "titulo": "tabla 03",
+        "imagen": "imagen/tabla03.jpg",
+        "categoria": {
+            "nombre": "tablas",
+            "id": "tablas"
+        },
+        "precio": 230
+    },
+    {
+        "id": "tabla 04",
+        "titulo": "tabla 04",
+        "imagen": "imagen/tabla04.jpg",
+        "categoria": {
+            "nombre": "tablas",
+            "id": "tablas"
+        },
+        "precio": 175
+    },
+    {
+        "id": "Vans 01",
+        "titulo": "vans 01",
+        "imagen": "imagen/vans01.jpeg",
+        "categoria": {
+            "nombre": "Sneakers",
+            "id": "Sneakers"
+        },
+        "precio": 350
+    },
+    {
+        "id": "Vans 02",
+        "titulo": "vans 02",
+        "imagen": "imagen/vans02.jpeg",
+        "categoria": {
+            "nombre": "Sneakers",
+            "id": "Sneakers"
+        },
+        "precio": 365
+    },
+    {
+        "id": "Vans 03",
+        "titulo": "vans 03",
+        "imagen": "imagen/vans03.jpeg",
+        "categoria": {
+            "nombre": "Sneakers",
+            "id": "Sneakers"
+        },
+        "precio": 420
+    },
+    {
+        "id": "Vans 04",
+        "titulo": "vans 04",
+        "imagen": "imagen/vans04.jpeg",
+        "categoria": {
+            "nombre": "Sneakers",
+            "id": "Sneakers"
+        },
+        "precio": 315
+    }
+]

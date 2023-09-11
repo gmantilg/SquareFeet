@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Square Feet - skateboard Shop - Proyecto bootstrap  Gio Mantilla -  galería</title>
-    <meta name="description" content="La cultura del skateboard se ha convertido en un fenómeno global, con comunidades vibrantes y competencias internacionales.">
-    <meta name="keywords" content="Fotos, videos, skateboarding, skateboard, trucos, rampas, estilo, deporte, tienda, shop, sk8">
-    <meta property="og:image" content="imagen/header_10_bn.jpg">
-    <link rel="shortcut icon" href="imagen/logo_mini.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="SCSS/styles.css" >
+    <title>Proyecto bootstrap  Gio Mantilla -  Inicio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:wght@100;400&display=swap');
     </style>
@@ -46,6 +40,12 @@
           <li class="nav-item">
             <a class="nav-link active" href="seccion5.html">Galería</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tienda.html">Tienda on line</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html"> Carrito <span id="numerito" class="numerito">0</span></a>
+        </li>
          
         </ul>
       </div>
@@ -54,46 +54,29 @@
   </div>
 
 </header>
-
 <!--Carrusel 2 imagenes-->
 
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagen/header_10_bn.jpg" class="d-block w-100" alt="header 10">
-    </div>
-    <div class="carousel-item">
-      <img src="imagen/header_11_bn.jpg" class="d-block w-100" alt="header 11">
-    </div>
-
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagen/header_11_bn.jpg" class="d-block w-100" alt="imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="imagen/header_10_bn.jpg" class="d-block w-100" alt="imagen 2">
+          </div>
+        </div>
+      </div>
 
 <!--Bloque 1-->
 
 <div class="container">
-  <h1 class="titulo col-xl-12 col-md-12 col-sm-12">
+  <h1 class="titulo">
       <b>amamos el old School</b>
   </h1>
   <img src="imagen/linea_1.png" class="img-fluid" alt="linea">
   </div>
 
 <div class="container">
-  <div data-aos="fade-left"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
   <div class="row">
     <div class="col-xl-12 col-md-12 col-sm-12">
       <p class="texto">Explora nuestra emocionante galería de fotos de skateboarding y sumérgete en el mundo vibrante y lleno de energía de este apasionante deporte! Capturamos los momentos más intensos, los trucos más impresionantes y la expresión de pura libertad sobre ruedas. Desde skaters profesionales realizando acrobacias increíbles hasta jóvenes promesas desafiando los límites, nuestras imágenes te transportarán a la acción en cada instantánea. Prepárate para maravillarte con la destreza y la gracia de los riders mientras conquistan obstáculos y desafían la gravedad. Explora nuestra galería y descubre la pasión y la belleza del skateboarding capturadas en cada imagen.
@@ -105,61 +88,45 @@
       <br>
       <br>
     </div>
-    </div>
  </div>
 
 
 <!--Bloque 2-->
 
 <div class="container">
-    <h2 class="titulo col-xl-12 col-md-12 col-sm-12">
+    <h1 class="titulo">
         <b>En imagenes</b>
-    </h2>
+    </h1>
     </div>
 
 
 <div class="container">
-  <div data-aos="fade-right"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
     <div class="row">
         <div class="col-xl-6 col-md-12 col-sm-12">
-            <img src="imagen/note_01.jpg" class="img-fluid" alt="galeria 1">
+            <img src="imagen/note_01.jpg" class="img-fluid" alt="linea">
       </div>
-      <br>
       <div class="col-xl-6 col-md-12 col-sm-12">
-          <img src="imagen/note_02.jpg" class="img-fluid" alt="galeria 2">
-    </div>
+          <img src="imagen/note_02.jpg" class="img-fluid" alt="linea">
     </div>
 </div>
 
 <div class="container">
-  <div data-aos="fade-left"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
     <div class="row">
         <div class="col-xl-6 col-md-12 col-sm-12">
-            <img src="imagen/note_03.jpg" class="img-fluid" alt="galeria 3">
+            <img src="imagen/note_03.jpg" class="img-fluid" alt="linea">
       </div>
-      <br>
       <div class="col-xl-6 col-md-12 col-sm-12">
-          <img src="imagen/note_04.jpg" class="img-fluid" alt="galeria 4">
-    </div>
+          <img src="imagen/note_04.jpg" class="img-fluid" alt="linea">
     </div>
 </div>
 
 <div class="container">
-  <div data-aos="fade-right"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
     <div class="row">
         <div class="col-xl-6 col-md-12 col-sm-12">
-            <img src="imagen/note_05.jpg" class="img-fluid" alt="galeria 5">
+            <img src="imagen/note_05.jpg" class="img-fluid" alt="linea">
       </div>
-      <br>
       <div class="col-xl-6 col-md-12 col-sm-12">
-          <img src="imagen/note_06.jpg" class="img-fluid" alt="galeria 6">
-    </div>
+          <img src="imagen/note_06.jpg" class="img-fluid" alt="linea">
     </div>
 </div>
 
@@ -167,10 +134,9 @@
 <!--footer-->
 
 <div class="container">
-  <div data-aos="zoom-in-up" data-aos-duration="1000">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
     <img src="imagen/linea_1.png" class="img-fluid" alt="linea">
-    <p class="col-md-4 mb-0 text-light">&copy; SquareFoot - 2023</p>
+    <p class="col-md-4 mb-0 text-light">&copy; SquareFeet - 2023</p>
 
     <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
       
@@ -190,13 +156,14 @@
       </li>
     </ul>
   </footer>
-  </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    </body>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
 </html>
