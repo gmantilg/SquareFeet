@@ -1,6 +1,6 @@
 let productos = [];
 
-fetch("./js/productos.json")
+fetch("js/productos.json")
     .then(response => response.json())
     .then(data => {
         productos = data;
@@ -83,31 +83,10 @@ if (productosEnCarritoLS) {
 }
 
 function agregarAlCarrito(e) {
-
-    Toastify({
-        text: "Producto agregado",
-        duration: 3000,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
-          borderRadius: "2rem",
-          textTransform: "uppercase",
-          fontSize: ".75rem"
-        },
-        offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
-          },
-        onClick: function(){} // Callback after click
-      }).showToast();
-
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
         productosEnCarrito[index].cantidad++;
     } else {
@@ -118,7 +97,17 @@ function agregarAlCarrito(e) {
     actualizarNumerito();
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
+    // Mostrar una ventana emergente con SweetAlert
+    Swal.fire({
+        icon: 'success',
+        title: 'Producto agregado',
+        text: `Producto ${productoAgregado.titulo} agregado exitosamente.`,
+        showConfirmButton: false, // No mostrar el botón de confirmación
+        timer: 2000, // Cerrar automáticamente después de 2 segundos (ajusta según tus preferencias)
+    });
 }
+
 
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
